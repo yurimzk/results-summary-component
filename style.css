@@ -23,6 +23,7 @@
     --gradient-persian-blue: hsla(241, 72%, 45%, 0);
 
     --neutral-white: hsl(0, 0%, 100%);
+    --neutral-light-white: hsl(0, 0%, 85%);
     --neutral-gray: hsl(0, 0%, 70%);
     --neutral-pale-blue: hsl(221, 100%, 96%);
     --neutral-light-lavender: hsl(241, 100%, 89%);
@@ -38,9 +39,57 @@ p {
 }
 
 #result-wrapper {
-    width: 100%;
-    background-color: var(--gradient-viole-blue);
+    background: linear-gradient(var(--gradient-light-slate-blue-bg), var(--gradient-light-royal-blue-bg));
     color: var(--neutral-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 3.2rem 3.2rem;
+    border-radius: 0 0 3.2rem 3.2rem;
+}
+
+.your-result {
+    width: 15.0rem;
+    height: 15.0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--gradient-viole-blue), var(--gradient-persian-blue));
+    padding: 4.8rem 4.8rem;
+    border-radius: 50%;
+}
+
+.your-result .result {
+    font-size: 4.8rem;
+    font-weight: 800;
+}
+
+.your-result .max-result {
+    color: var(--neutral-light-white);
+    font-size: 1.6rem;
+}
+
+.your-result-text {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: var(--neutral-light-white);  
+}
+
+.your-result-text h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.your-result-text p {
+    font-size: 1.6rem;
+    margin-top: .8rem;
+    color: var(--neutral-light-white);
 }
 
 #summary-wrapper {
@@ -112,7 +161,7 @@ p {
     color: var(--neutral-dark-gray-blue);
 }
 
-.max-score {
+#summary-wrapper .max-score {
     color: var(--neutral-gray);
 }
 
