@@ -7,10 +7,15 @@
 :root {
     font-size: 62.5%;
     
-    --primary-light-red: hsl(0, 100%, 67%);
-    --primary-orangey-yellow: hsl(39, 100%, 56%);
-    --primary-green-teal: hsl(166, 100%, 37%);
-    --primary-cobalt-blue: hsl(234, 85%, 45%);
+    --primary-light-red-bg: hsl(0, 100%, 97%);
+    --primary-orangey-yellow-bg: hsl(39, 100%, 97%);
+    --primary-green-teal-bg: hsl(166, 100%, 97%);
+    --primary-cobalt-blue-bg: hsl(234, 85%, 97%);
+
+    --primary-light-red: hsl(0, 100%, 75%);
+    --primary-orangey-yellow: hsl(39, 100%, 65%);
+    --primary-green-teal: hsl(166, 100%, 50%);
+    --primary-cobalt-blue: hsl(234, 85%, 55%);
 
     --gradient-light-slate-blue-bg: hsl(252, 100%, 67%);
     --gradient-light-royal-blue-bg: hsl(241, 81%, 54%);
@@ -18,6 +23,7 @@
     --gradient-persian-blue: hsla(241, 72%, 45%, 0);
 
     --neutral-white: hsl(0, 0%, 100%);
+    --neutral-gray: hsl(0, 0%, 70%);
     --neutral-pale-blue: hsl(221, 100%, 96%);
     --neutral-light-lavender: hsl(241, 100%, 89%);
     --neutral-dark-gray-blue: hsl(224, 30%, 27%);
@@ -29,4 +35,78 @@ body {
 
 p {
     font-size: 1.8rem;
+}
+
+#result-wrapper {
+    width: 100%;
+    background-color: var(--gradient-viole-blue);
+    color: var(--neutral-white);
+}
+
+#summary-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2.4rem 2.4rem;
+}
+
+.reaction, .memory, .verbal, .visual {
+    border-radius: 1.2rem;
+    padding: 1.4rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.reaction-heading, .memory-heading, .verbal-heading, .visual-heading {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.reaction-score, .memory-score, .verbal-score, .visual-score {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+#summary-wrapper .reaction {
+    background-color: var(--primary-light-red-bg);
+}
+
+#summary-wrapper .memory {
+    background-color: var(--primary-orangey-yellow-bg);
+}
+
+#summary-wrapper .verbal {
+    background-color: var(--primary-green-teal-bg);
+}
+
+#summary-wrapper .visual {
+    background-color: var(--primary-cobalt-blue-bg);
+}
+
+.reaction .reaction-heading {
+    color: var(--primary-light-red);
+}
+
+.memory .memory-heading {
+    color: var(--primary-orangey-yellow);
+}
+
+.verbal .verbal-heading {
+    color: var(--primary-green-teal);
+}
+
+.visual .visual-heading {
+    color: var(--primary-cobalt-blue);
+}
+
+.score {
+    color: var(--neutral-dark-gray-blue);
+}
+
+.max-score {
+    color: var(--neutral-gray);
 }
