@@ -50,6 +50,11 @@ p {
     padding: 2.4rem 2.4rem;
 }
 
+#summary-wrapper h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
 .reaction, .memory, .verbal, .visual {
     border-radius: 1.2rem;
     padding: 1.4rem 1.2rem;
@@ -68,7 +73,7 @@ p {
 .reaction-score, .memory-score, .verbal-score, .visual-score {
     display: flex;
     align-items: center;
-    gap: .4rem;
+    gap: .6rem;
 }
 
 #summary-wrapper .reaction {
@@ -109,4 +114,16 @@ p {
 
 .max-score {
     color: var(--neutral-gray);
+}
+
+.btn-continue {
+    background-color: var(--neutral-dark-gray-blue);
+    color: var(--neutral-white);
+    padding: 1.6rem;
+    border: none;
+    border-radius: 3.2rem;
+
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
