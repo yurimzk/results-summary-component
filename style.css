@@ -43,7 +43,7 @@ p {
     color: var(--neutral-white);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 2.4rem;
     padding: 3.2rem 3.2rem;
@@ -102,6 +102,7 @@ h1 {
 #summary-wrapper h2 {
     font-size: 1.6rem;
     font-weight: 700;
+    color: var(--neutral-dark-gray-blue);
 }
 
 .reaction, .memory, .verbal, .visual {
@@ -175,4 +176,41 @@ h1 {
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+@media (min-width: 1440px) {
+    #app {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #result-wrapper {
+        width: 32.0rem;
+        height: 48.0rem;
+        gap: 1.8rem;
+        border-radius: 3.2rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .your-result-text {
+        padding: 0 .8rem;
+    }
+
+    .your-result-text h2 {
+        font-size: 3.2;
+        font-weight: 700;
+    }
+
+    .your-result-text p {
+        margin-top: 1.8rem;
+    }
+
+    #summary-wrapper h2 {
+        font-size: 2.4rem;
+    }
 }
