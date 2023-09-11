@@ -24,10 +24,12 @@
 
     --neutral-white: hsl(0, 0%, 100%);
     --neutral-light-white: hsl(0, 0%, 85%);
-    --neutral-gray: hsl(0, 0%, 70%);
+    --neutral-gray: hsl(0, 0%, 58%);
     --neutral-pale-blue: hsl(221, 100%, 96%);
     --neutral-light-lavender: hsl(241, 100%, 89%);
     --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+    --neutral-dark-gray-blue-hover: hsl(224, 50%, 21%);
+    --color-box-shadow: rgba(149, 157, 165, 0.2);
 }
 
 body {
@@ -160,10 +162,12 @@ h1 {
 
 .score {
     color: var(--neutral-dark-gray-blue);
+    font-weight: 800;
 }
 
 #summary-wrapper .max-score {
     color: var(--neutral-gray);
+    font-weight: 800;
 }
 
 .btn-continue {
@@ -176,6 +180,11 @@ h1 {
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+.btn-continue:hover {
+    background-color: var(--neutral-dark-gray-blue-hover);
+    cursor: pointer;
 }
 
 @media (min-width: 1440px) {
@@ -208,6 +217,15 @@ h1 {
 
     .your-result-text p {
         margin-top: 1.8rem;
+    }
+
+    #summary-wrapper {
+        width: 32.0rem;
+        height: 48.0rem;
+        gap: 2.8rem;
+        border-radius: 0 3.2rem 3.2rem 0;
+        padding: 2.4rem 3.2rem;
+        box-shadow: var(--color-box-shadow) 0px 8px 24px;
     }
 
     #summary-wrapper h2 {
