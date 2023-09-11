@@ -99,6 +99,7 @@ h1 {
     flex-direction: column;
     gap: 1.6rem;
     padding: 2.4rem 2.4rem;
+    background-color: var(--neutral-white);
 }
 
 #summary-wrapper h2 {
@@ -224,7 +225,7 @@ h1 {
         height: 48.0rem;
         gap: 2.8rem;
         border-radius: 0 3.2rem 3.2rem 0;
-        padding: 2.4rem 3.2rem;
+        padding: 2.4rem 3.2rem 2.4rem 4.8rem;
         box-shadow: var(--color-box-shadow) 0px 8px 24px;
     }
 
